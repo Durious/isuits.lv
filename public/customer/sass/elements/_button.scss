@@ -1,0 +1,93 @@
+/*---------------------------------------
+    ## Button
+---------------------------------------*/
+.template-btn {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 48px;
+    border: 1px solid var(--heading-color);
+    display: inline-block;
+    transition: .3s;
+    &:hover {
+        color: $white;
+        background-color: var(--main-color-one);
+        border: 1px solid transparent;
+    }
+}
+.template-btn.tb-2 {
+    color: $white;
+    background-color: var(--main-color-one);
+    border: 1px solid transparent;
+    &:hover {
+        color: var(--heading-color);;
+        background-color: transparent;
+        border: 1px solid var(--heading-color);
+    }
+}
+.template-btn2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 80px 12px 24px;
+    border: 1px solid var(--secondary-color);
+    display: inline-block;
+    color: $white;
+    background-color: var(--secondary-color);
+    text-transform: capitalize;
+    transition: .3s;
+    position: relative;
+    span {
+        margin-left: 40px;
+        position: absolute;
+        top: 14px;
+        right: 26px;
+        transition: .3s;
+    }
+    &:hover {
+        color: $white;
+        background-color: var(--main-color-one);
+        border: 1px solid var(--main-color-one);
+        span {
+            right: 22px;
+        }
+    }
+}
+.template-btn3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 50px 12px 0;
+    display: inline-block;
+    position: relative;
+    img {
+        position: absolute;
+        top: 20px;
+        right: 5px;
+        transition: .3s;
+    }
+    &:hover {
+        img {
+            right: 0;
+        }
+    }
+}
+.picks-tab {
+    margin-bottom: 40px;
+    ul {
+        li {
+            display: inline;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 12px 24px;
+            width: 150px;
+            display: inline-block;
+            background-color: transparent;
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .active { 
+            color: $white;
+            background-color: var(--main-color-one);
+        }
+    }
+}

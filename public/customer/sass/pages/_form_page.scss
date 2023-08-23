@@ -1,0 +1,113 @@
+/* Form Page */
+
+.form-page {
+    h6 {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    // Navigation
+    .nav-absolute.navbar-area {
+        position: inherit;
+        padding: 0;
+        .nav-right-content {
+            li {
+                margin: 0 10px;
+            }
+        }
+        select {
+            border: none;
+            font-size: 16px;
+            color: var(--paragraph-color);
+            font-weight: 300;
+        }
+        .user-image {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    // Banner
+    .form-banner {
+        background-image: url('../img/form-page/banner-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 800px;
+            height: 200px;
+            background-color: $white;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .banner-title {
+            padding: 300px 0 50px;
+        }
+    }
+
+    // Form Section
+    .form-section {
+        padding-top: 150px;
+    }
+    .common-input2 {
+        .diff-bg {
+            background: #E0E0E0;
+            border: 1px solid #E0E0E0;
+        }
+        input, textarea, select {
+            width: 350px;
+        }
+    }
+    .form-title {
+        margin-bottom: 200px;
+    }
+    .second-row {
+        input {
+            height: 150px;
+            padding-bottom: 120px;
+        }
+    }
+    .form-title2 {
+        margin: 150px 0;
+    }
+    h6.diff-color {
+        color: #E1716B;
+    }
+    input.diff-border {
+        border: 1px solid #E1716B;
+    }
+    select {
+        padding: 15px 20px;
+        background: transparent;
+        border: 1px solid #D0CBC7;
+    }
+    .input-group-text {
+        margin-left: -100%;
+        background: transparent;
+        border: none;
+    }
+    .input-group {
+        width: auto;
+        position: relative;
+        i {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+    }
+
+    .instagram-area {
+        padding-top: 350px;
+    }
+}

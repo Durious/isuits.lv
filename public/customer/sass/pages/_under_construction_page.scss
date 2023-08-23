@@ -1,0 +1,36 @@
+/* Under Construction Page */
+
+.under-construction-banner {
+    height: 100vh;
+    background-color: #ffdec6;
+    text-align: center;
+    position: relative;
+    .content-404 {
+        img {
+            display: block;
+            max-width: 50%;
+            height: auto;
+            margin: auto;
+        }
+        span {
+            display: block;
+            font-size: 200px;
+            line-height: 150px;
+            font-weight: 700;
+            display: none;
+        }
+        a {
+            display: inline-block;
+            margin-top: 40px;
+            color: #fff;
+            background-color: var(--heading-color);
+            border: none;
+            transition: $transition;
+            text-transform: capitalize;
+            padding: 15px 30px;
+            &:hover {
+                background-color: var(--main-color-one);
+            }
+        }
+    }
+}

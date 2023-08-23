@@ -1,0 +1,7 @@
+{
+  "instruction": "App dropdown uses the below available array.",
+  "available": [
+    { "value": "en", "label": "English", "flag": "US" },
+    { "value": "lv", "label": "Latvian", "flag": "LV" }
+  ]
+}

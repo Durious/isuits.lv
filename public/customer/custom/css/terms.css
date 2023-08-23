@@ -1,0 +1,17 @@
+.terms-page .nav-absolute.navbar-area {
+    position: inherit;
+    padding: 0;
+}
+
+.terms-page .terms-banner {
+    background-image: url("/customer/img/service-page/services-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-color: rgb(0 0 0 / 77%);
+    background-blend-mode: overlay;
+    height: 224px;
+    display: flex;
+    align-items: center;
+}

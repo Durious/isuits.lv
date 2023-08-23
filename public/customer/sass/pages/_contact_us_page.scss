@@ -1,0 +1,96 @@
+/* Contact Us Page */
+.contact-us-page {
+    .instagram-area {
+        padding-top: 110px;
+    }
+    // Navigation
+    .nav-absolute.navbar-area {
+        position: inherit;
+        padding: 0;
+        .nav-right-content {
+            li {
+                margin: 0 10px;
+            }
+        }
+        select {
+            border: none;
+            font-size: 16px;
+            color: var(--paragraph-color);
+            font-weight: 300;
+        }
+        .user-image {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    // Contact Area
+    .contact-form-area {
+        background-image: url('../img/contact-us-page/contact-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover; 
+        padding-bottom: 120px;
+        background-attachment: fixed;
+        .contact-address {
+            height: 970px;
+        }
+        form {
+            input[type="text"],textarea {
+                width: 90%;
+            }
+            input[type="email"], 
+            input[id="reason"] {
+                width: 45%;
+            }
+            input {
+                margin-bottom: 40px;
+            }
+            button {
+                margin-top: 60px;
+            }
+        }
+        h6 {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.common-form {
+    .contact-bg {
+        background: rgba(255, 255, 255, .98);
+        margin-top: 50px;
+        padding: 40px 0;
+        overflow: hidden;
+        form, .contact-address {
+            background: #F9F1ED;
+            padding: 60px 40px;
+            margin: 0 40px;
+        }
+    }
+}
+
+.common-input2 {
+    h6 {
+        margin-bottom: 24px;
+    }
+    input, textarea {
+        padding: 15px 20px;
+        background: transparent;
+        border: 1px solid #D0CBC7;
+    }
+}
+
+.contact-form-area {
+    .single-part-img {
+        img {
+            width: 100%;
+            height: 300px;
+            display: block;
+        }
+    }
+}

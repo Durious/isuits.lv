@@ -1,0 +1,83 @@
+/* FAQ Page */
+
+.faq-page {
+
+    // Navigation
+    .nav-absolute.navbar-area {
+        position: inherit;
+        padding: 0;
+        .nav-right-content {
+            li {
+                margin: 0 10px;
+            }
+        }
+        select {
+            border: none;
+            font-size: 16px;
+            color: var(--paragraph-color);
+            font-weight: 300;
+        }
+        .user-image {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    .accordion-area {
+        background-image: url('../img/faq-page/faq-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover; 
+        padding-bottom: 120px;
+        background-attachment: fixed;
+        .help-padding {
+            padding-top: 120px;
+            h1 {
+                color: $white;
+            }
+        }
+        form {
+            margin-top: 60px;
+            input {
+                width: 700px;
+                border: 1px solid transparent;
+                padding: 30px;
+            }
+            button {
+                border: 1px solid transparent;
+                padding: 30px;
+            }
+        }
+        .faq-section {
+            background: $white;
+            margin-top: 120px;
+            padding: 120px 0;
+            textarea {
+                width: 100%;
+                border: 1px solid var(--secondary-color);
+                padding: 40px;
+            }
+            button {
+                cursor: pointer;
+            }
+            .template-btn2 {
+                background: var(--main-color-one);
+                border: 1px solid transparent;
+                width: 300px;
+                padding: 20px 30px;
+                text-align: left;
+                &:hover {
+                    background: var(--secondary-color);
+                }
+                span {
+                    padding: 8px 0;
+                }
+            }
+        }
+        .faq-comment {
+            margin-top: 70px;
+        }
+    }
+}

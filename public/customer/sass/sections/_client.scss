@@ -1,0 +1,64 @@
+/* Client */
+.client-area {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        background: var(--main-color-one);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/home-1/client/client-bg.png');
+        background-repeat: no-repeat;
+    }
+    .client-slider {
+        padding-bottom: 40px;
+        margin-right: 100px;
+        position: relative;
+        .single-slide {
+            padding: 60px 40px 40px;
+            background: $white;
+            width: 90%;
+            box-shadow: 20px 0 60px rgba(247, 247, 247, .4);
+            margin: 50px 0 80px;
+            .diff-h6 {
+                color: #C3BFBF;
+                font-style: italic;
+            }
+        }
+        .slide-image {
+            margin-right: 30px;;
+        }
+        .slide-bottom {
+            margin-top: 30px;
+        }
+    }
+    .section-title {
+        padding-left: 70%;
+        margin-bottom: 0!important;
+    }
+}
+
+.client-slider .owl-nav .owl-prev {
+    position: absolute;
+    bottom: 50%;
+    right: -100px;
+}
+.client-slider .owl-nav .owl-next {
+    position: absolute;
+    bottom: 55%;
+    right: -100px;
+}
+
+.client-area .owl-carousel .owl-nav.disabled {
+    display: block!important;
+}

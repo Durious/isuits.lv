@@ -1,0 +1,44 @@
+/* Discount */
+.discount-area {
+    padding: 85px 0 390px 0;
+    overflow: hidden;
+    .discount-image {
+        position: relative;
+        .image-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 450px;
+            height: 600px;
+        }
+        .image-2 {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 380px;
+            height: 450px;
+        }
+        .image-3 {
+            position: absolute;
+            top: 250px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 700px;
+            height: 600px;
+        }
+        .image-bg {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .image-bg.image-1 {
+            background-image: url('../img/home-1/discount/discount-1.png');
+        }
+        .image-bg.image-2 {
+            background-image: url('../img/home-1/discount/discount-2.png');
+        }
+        .image-bg.image-3 {
+            background-image: url('../img/home-1/discount/discount-3.png');
+        }
+    }
+}

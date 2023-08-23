@@ -1,0 +1,48 @@
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animate.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animate {
+  animation-duration: 0.5s !important;
+  &.fast {
+    animation-duration: 0.4s !important;
+  }
+  &.faster {
+    animation-duration: 0.3s !important;
+  }
+  &.fastest {
+    animation-duration: 0.2s !important;
+  }
+  &.slow {
+    animation-duration: 0.75s !important;
+  }
+  &.slower {
+    animation-duration: 1s !important;
+  }
+  &.slowest {
+    animation-duration: 1.5s !important;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}

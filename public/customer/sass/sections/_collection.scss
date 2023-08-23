@@ -1,0 +1,27 @@
+/* Collection */
+.collection-area {
+    position: relative;
+    .collection-h2 {
+        padding-left: 0;
+    }
+    .collection-image {
+        position: relative;
+        overflow: hidden;
+    }
+    .collection-bg {
+        background-image: url('../img/home-1/collection/collection.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 530px;
+        height: 600px;
+        transition: .8s;
+    }
+    .collection-small-image {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}

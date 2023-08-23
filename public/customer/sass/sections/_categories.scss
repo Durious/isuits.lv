@@ -1,0 +1,60 @@
+/* Categories */
+.categories-area {
+    height: 800px;
+    .single-item {
+        position: relative;
+        margin-left: 45px;
+        transition: .5s;
+        .item-image {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 510px;
+            transition: .5s;
+        }
+        .item-image.cat-1 {
+            background-image: url('../img/home-1/category/cat-1.png')
+        }
+        .item-image.cat-2 {
+            background-image: url('../img/home-1/category/cat-2.png')
+        }
+        .item-image.cat-3 {
+            background-image: url('../img/home-1/category/cat-3.png')
+        }
+        .item-image.cat-4 {
+            background-image: url('../img/home-1/category/cat-4.png')
+        }
+        .item-image.cat-5 {
+            background-image: url('../img/home-1/category/cat-5.png')
+        }
+        .item-content {
+            text-align: center;
+            padding: 30px;
+            max-width: 295px;
+        }
+    }
+    .single-item.active {
+        .item-content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: $white;
+            text-align: left;
+            p {
+                font-weight: 400;
+                position: relative;
+                span {
+                    margin-left: 10px;
+                    position: absolute;
+                    top: 5px;
+                    right: 26px;
+                }
+            }
+        }
+        .item-image {
+            width: 320px;
+            height: 650px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+/* Returns Page */
+
+.returns-page { 
+    // Navigation
+    .nav-absolute.navbar-area {
+        position: inherit;
+        padding: 0;
+    }
+
+    // Banner
+    .returns-banner {
+        max-width: 1670px;
+        background-image: url('../img/returns-page/banner-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        margin: auto;
+
+        .banner-title {
+            padding: 150px 0;
+            h1 {
+                color: $white;
+            }
+        }
+    }
+
+    // Returns Content
+    .returns-content {
+        .single-content {
+            padding: 0 20%;
+            p {
+                margin: 20px 0 30px;
+            }
+        }
+        .template-btn2 {
+            width: 300px;
+            text-align: left;
+        }
+    }
+}

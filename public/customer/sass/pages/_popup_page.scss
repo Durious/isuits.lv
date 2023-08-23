@@ -1,0 +1,548 @@
+/* PopUp Page */
+
+.promotion-popup {
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms;
+    position: fixed;
+    z-index: 9990;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    // PopUp
+    .modal-image {
+        background-image: url('../img/modal-page/modal-image.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 550px;
+    }
+    .modal-right {
+        background: $white;
+        width: 100%;
+        height: 550px;
+        padding: 100px 0 0;
+        position: relative;
+    }
+    .modal-custom-margin {
+        padding: 220px 0;
+    }    
+    
+    label {
+        position: relative;
+    }
+    /* Hide the browser's default checkbox */
+    label input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: -25%;
+        height: 20px;
+        width: 20px;
+        background-color: #ACACAC;
+        border-radius: 50%;
+    }
+
+    form {
+        display: block;
+        position: relative;
+        margin-bottom: 20px;
+        input {
+            width: 60%;
+            padding: 12px 24px;
+            font-weight: 400;
+            border: 1px solid var(--main-color-one);
+            display: inline-block;
+            background-color: var(--main-color-one);
+            &:focus {
+                border: 1px solid var(--main-color-one);
+            }
+        }
+        button {
+            border: 1px solid var(--main-color-one);
+            background: var(--main-color-one);
+            position: absolute;
+            top: 0;
+            right: 20%;
+            span {
+                padding: 1px 20px;
+                color: #000;
+                display: inline-block;
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+        ::placeholder {
+            color: #000;
+            opacity: 1; /* Firefox */
+            }
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #000;
+            }
+            ::-ms-input-placeholder { /* Microsoft Edge */
+            color: #000;
+            }
+    }
+    
+    /* On mouse-over, add a grey background color */
+    label:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    
+    /* When the checkbox is checked, add a blue background */
+    label input:checked ~ .checkmark {
+        background-color: var(--main-color-one);
+    }
+    
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    /* Show the checkmark when checked */
+    label input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    /* Style the checkmark/indicator */
+    label .checkmark:after {
+        left: 8px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+
+.cart-popup {
+    transition: all 500ms;
+    position: fixed;
+    z-index: 9999;
+    width: 100%!important;
+    max-width: 500px;
+    height: 100%;
+    right: -100%;
+    top:0;
+    &.active{
+        right: 0;
+    }
+
+    .cart-content {
+        background-color: $white;
+        padding: 50px 50px;
+        height: 100%;
+        .cross-icon {
+            right: 50px;
+        }
+        .cart-title {
+            h6 {
+                color: #ACACAC;
+            }
+        }
+        .cart-items {
+            height: calc(100vh - 335px);
+            overflow: auto;
+            margin-right: -20px;
+            padding-right: 20px;
+
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background-color: #888;
+            }
+        
+            &::-webkit-scrollbar-track {
+                background-color: #f1f1f1;
+            }
+
+            .item-right {
+                width: 95px;
+            }
+            .item-left {
+                width: calc(100% - 95px);
+            }
+        }
+        .item-image {
+            width: 80px;
+            height: 100px; 
+            background: #F4F4F4;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-right: 40px
+        }
+        .item-name {
+            width: 190px;
+        }
+        .image-1 {
+            background-image: url('../img/cart-popup-page/cart-1.png');
+        }
+        .image-2 {
+            background-image: url('../img/cart-popup-page/cart-2.png');
+        }
+        .image-3 {
+            background-image: url('../img/cart-popup-page/cart-3.png');
+        }
+
+        .item-icon {
+            margin-left: 50px;
+            margin-top: -10px;
+            i {
+                color: #ACACAC;
+                transition: .3s;
+                cursor: pointer;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+        .total-price {
+            margin-top: 70px;
+            h4 {
+                color: #ACACAC;
+                line-height: 20px;
+            }
+        }
+        .template-btn2 {
+            width: 100%;
+            padding: 20px 30px;
+            span {
+                font-size: 27px;
+            }
+        }
+        .single-item {
+            display: none;
+        }
+    }
+}
+
+
+.live-chat-popup {
+    transition: all 500ms;
+    position: fixed;
+    z-index: 9999;
+    width: 100%!important;
+    max-width: 500px;
+    height: 100%;
+    right: -100%;
+    top:0;
+    &.active{
+        right: 0;
+    }
+
+    .live-chat-content { 
+        background-color: $white;
+        height: 100%;
+        padding-top: 75px;
+        text-align: center;
+        .cross-icon {
+            right: 50px;
+        }
+        .all-chat {
+            margin-top: 100px;
+        }
+        .overlay-image {
+            background-position: top;
+            width: 310px;
+            height: 170px;
+            margin: auto;
+        }
+        .image-1 {
+            background-image: url('../img/live-chat-page/chat-1.png');
+        }
+        .image-2 {
+            background-image: url('../img/live-chat-page/chat-2.png');
+        }
+        .image-3 {
+            background-image: url('../img/live-chat-page/chat-3.png');
+        }
+        .hover-state {
+            p {
+                color: $white;
+                font-weight: 400;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                span {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .single-chat {
+            cursor: pointer;
+        }
+    }
+    
+
+    .live-chat-content-2 {
+        background-color: $white;
+        height: 100%;
+        .live-chat-content-2-top {
+            padding: 100px;
+            .overlay-image {
+                background-position: top;
+                width: 110px;
+                height: 160px;
+            }
+        }
+        .cross-icon {
+            right: 50px;
+        }
+        .image-1 {
+            background-image: url('../img/live-chat-page/chat-1.png');
+        }
+        .image-2 {
+            background-image: url('../img/live-chat-page/chat-2.png');
+        }
+        .image-3 {
+            background-image: url('../img/live-chat-page/chat-3.png');
+        }
+        .all-chat {
+            margin-top: 50px;
+        }
+
+
+        .live-chat-box {
+            background: var(--main-color-one);
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            p.p-white {
+                color: $white;
+                font-weight: 400;
+            }
+            p.message-name {
+                font-weight: 400;
+            }
+            p.message-date {
+                font-size: 14px;
+            }
+            input[type="text"] {
+                width: 50%;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 50px;
+            }
+            .submit-text {
+                font-size: 14px;
+                font-style: italic;
+                color: $white;
+            }
+            input[type="email"] {
+                width: 90%;
+                border: none;
+                padding: 12px 15% 12px 40px;
+                border-radius: 50px;
+            }
+            .search-button {
+                padding: 8px;
+                font-size: 12px;
+                background: var(--main-color-one);
+                border: none;
+                margin-left: -10%;
+                border-radius: 50%;
+                line-height: 13px;
+                cursor: pointer;
+                text-align: center;
+                i {
+                    color:$white;
+                }
+            }
+        }
+    }
+
+    .part-active {
+        display: block;
+    }
+    .part-hide {
+        display: none;
+    }
+}
+
+.login-popup {
+    transition: all 500ms;
+    position: fixed;
+    z-index: 9999;
+    width: 100%!important;
+    max-width: 500px;
+    height: 100%;
+    right: -100%;
+    top:0;
+    &.active{
+        right: 0;
+    }
+
+    .login-content {
+        padding: 100px 50px 30px;
+        background-color: $white;
+        height: 100%;
+        form {
+            margin-top: 150px;
+            input,
+            input:focus {
+                color: var(--heading-color);
+                padding: 20px;
+                border-radius: 0px;
+                border: 1px solid #707070;
+                border-left: none;
+            }
+            .input-group-text {
+                background: $white;
+                border: 1px solid #707070;
+                border-radius: 0px;
+                padding-left: 24px;
+            }
+            a {
+                font-weight: 400;
+                color: #ACACAC;
+                $transition: .3s;
+                &:hover {
+                    color: #000;
+                }
+            }
+            button {
+                width: 100%;
+                text-align: left;
+                padding: 20px 24px;
+                span {
+                    font-size: 27px;
+                }
+            }
+        }
+        .login-bottom {
+            margin-top: 200px;
+            p {
+                font-weight: 400;
+                a {
+                    color: #ACACAC;
+                    $transition: .3s;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .signup-content {
+        padding: 50px 50px 20px;
+        background-color: $white;
+        height: 100%;
+        .template-btn2.on2 {
+            width: 100%;
+            text-align: left;
+            padding: 20px 24px;
+            margin-top: 24px;
+        }
+        .login-bottom {
+            margin-top: 60px;
+        }
+        form {
+            margin-top: 50px;
+            label {
+                display: inline;
+            }
+        }
+        input,
+        input:focus {
+            color: var(--heading-color);
+            padding: 20px;
+            border-radius: 0px;
+            border: 1px solid #707070;
+            border-left: none;
+        }
+        .input-group-text {
+            background: $white;
+            border: 1px solid #707070;
+            border-radius: 0px;
+            padding-left: 24px;
+        }
+        a {
+            font-weight: 400;
+            color: #ACACAC;
+            $transition: .3s;
+            &:hover {
+                color: #000;
+            }
+        }
+        button {
+            width: 100%;
+            text-align: left;
+            padding: 20px 24px;
+            span {
+                font-size: 27px;
+            }
+        }
+    }
+
+    .forgot-password-content {
+        padding: 100px 50px 30px;
+        background-color: $white;
+        height: 100%;
+        form {
+            margin-top: 150px;
+            input,
+            input:focus {
+                color: var(--heading-color);
+                padding: 20px;
+                border-radius: 0px;
+                border: 1px solid #707070;
+                border-left: none;
+            }
+            .input-group-text {
+                background: $white;
+                border: 1px solid #707070;
+                border-radius: 0px;
+                padding-left: 24px;
+            }
+            button {
+                width: 100%;
+                text-align: left;
+                padding: 20px 24px;
+                span {
+                    font-size: 27px;
+                }
+            }
+        }
+        .forgot-password-bottom {
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    .part-active {
+        display: block;
+    }
+    .part-hide {
+        display: none;
+    }
+}

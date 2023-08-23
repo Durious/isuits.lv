@@ -1,0 +1,81 @@
+.custom-modal {
+    display: none;
+    opacity: 0;
+    transition: all 500ms;
+    position: fixed;
+    z-index: 9990;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+.custom-modal.active {
+    opacity: 1;
+    display: block;
+}
+
+.custom-modal .modal-custom-margin {
+    padding: 100px 0;
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+}
+
+.custom-modal .custom-modal-container {
+    position: relative;
+    padding: 25px 60px 40px;
+    background: white;
+}
+
+.custom-modal .custom-modal-container button.close {
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.custom-modal .custom-modal-container .custom-modal-title {
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+
+.custom-modal .custom-modal-container button.close i {
+    font-weight: bold;
+}
+
+.custom-modal .form-item {
+    width: 100%;
+}
+
+.custom-modal .form-item.half {
+    width: 48%;
+}
+
+.custom-modal .form-item input {
+    padding: 15px 20px;
+    background: transparent;
+    border: 1px solid #D0CBC7;
+    width: 100%;
+}
+
+.custom-modal .form-item select {
+    padding: 15px 20px;
+    background: transparent;
+    border: 1px solid #D0CBC7;
+    width: 100%;
+}
+
+.custom-modal .form-item h6 {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    margin-left: 7px;
+}
+
+.custom-modal .cutom-modal-body {
+    margin: 70px 0px;
+}

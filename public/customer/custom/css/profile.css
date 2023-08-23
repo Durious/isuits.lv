@@ -1,0 +1,49 @@
+.profile-page .h-scroll-table {
+    overflow-x: auto;
+}
+.profile-page .h-scroll-table::-webkit-scrollbar {
+    height: 8px;
+}
+.profile-page .h-scroll-table::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+.profile-page .h-scroll-table::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.profile-table {
+    min-width: 1050px;
+    width: 100%;
+}
+
+.profile-table th {
+    color: #a3a3a3;
+    padding: 20px 20px;;
+}
+
+.profile-table td {
+    padding: 20px 20px;
+}
+
+.profile-table tr {
+    cursor: pointer;
+}
+
+.profile-page .nav-pills .nav-link {
+    padding: 15px 45px!important;
+    border-radius: 0!important;
+    transition: all .5s;
+}
+.profile-page .nav-pills .nav-link:hover {
+    color: #fff;
+    background-color: #e9c6ab;
+}
+.profile-page .nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #dca378;
+}
+.profile-page .badge {
+    border-radius: 0;
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 90px;
+}

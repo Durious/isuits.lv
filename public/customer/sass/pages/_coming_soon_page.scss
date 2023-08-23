@@ -1,0 +1,40 @@
+/* Coming Soon Page */
+.coming-soon-page {
+    .coming-soon-banner {
+        height: 100vh;
+        background: url('../img/coming-soon-page/coming-soon-bg.png') no-repeat top center / cover;
+        padding-top: 27%;
+    }
+
+    ul.countdown {
+        text-align: center;
+    }
+    ul.countdown li {
+        display: inline-block;
+        margin: 0 10px;
+        color: $white;
+    }
+    ul.countdown li span {
+        font-size: 55px;
+        color: $white;
+    }
+    ul.countdown li.seperator {
+        font-size: 55px;
+        line-height: 65px;
+        vertical-align: top;
+        color: $white;
+    }
+    ul.countdown li p {
+        font-size: 24px;
+        text-transform: capitalize;
+        color: $white;
+    }
+
+    .coming-soon-button {
+        width: 100%;
+        .template-btn2 {
+            margin: 0 15px;
+            padding: 12px 120px 12px 24px;
+        }
+    }
+}

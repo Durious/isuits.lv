@@ -1,0 +1,14 @@
+/* Contact Us Page */
+.contact-us-page .nav-absolute.navbar-area {
+  position: inherit;
+  padding: 10px 0; }
+  .contact-us-page .nav-absolute.navbar-area .nav-right-content li {
+    margin: 0 10px; }
+  .contact-us-page .nav-absolute.navbar-area select {
+    border: none;
+    font-size: 16px;
+    color: var(--paragraph-color);
+    font-weight: 300; }
+  .contact-us-page .nav-absolute.navbar-area .user-image img {
+    width: 40px;
+    height: 40px; }

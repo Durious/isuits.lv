@@ -1,0 +1,189 @@
+/* Blog Single Page */
+
+.blog-single-page {
+    .instagram-area {
+        padding-top: 110px;
+    }    
+
+    // Navigation
+    .nav-absolute.navbar-area {
+        position: inherit;
+        padding: 0;
+    }
+
+    // Blog Content
+    .blog-single-content {
+        .blog-single-image {
+            width: 93%;
+            // right: 2%;
+            // border-radius: 5px;
+            // background: #fff;
+            // z-index: 9;
+            // text-align: center;
+            // color: #000;
+            // padding: 10px 0px;
+            // float: right;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 6vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            // -webkit-box-shadow: -2px 0px 8px 0px rgba(0, 0, 0, 0.16);
+            // box-shadow: -2px 0px 8px 0px rgba(0, 0, 0, 0.16);
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .section-title.section-title-style {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -40px;
+                width: 100%;
+                height: 2px;
+                background: var(--secondary-color);
+            }
+        }
+        .banner-content {
+            padding: 105px 0 30px;
+        }
+        .diffrent-style {
+            position: relative;
+            font-size: 22px;
+            font-weight: 400;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 100%;
+                background: var(--main-color-one);
+            }
+        }
+        .content-bottom {
+            i {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+            .fa-heart {
+                color: $red2;
+            }
+        }
+    }
+
+    // Reviews 
+    .blog-single-reviews {
+        .single-review {
+            margin-bottom: 80px;
+        }
+        .review-image {
+            width: 15%;
+        }
+        .review-content {
+            width: 85%;
+            i.dif-color {
+                color: #ADABAB;
+            }
+            li {
+                display: inline;
+                margin-right: 10px;
+            }
+        }
+        .reviwer-dot {
+            i {
+                color: #ADABAB;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+        .review-bottom {
+            .fa-heart {
+                color: $red2;
+            }
+            .common-span {
+                font-style: italic;
+            }
+            .bottom-right {
+                margin-right: 50px;
+                i {
+                    font-size: 20px;
+                    margin-left: 24px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    // Comment
+    .blog-single-comment {
+        textarea {
+            width: 100%;
+            border: 1px solid var(--secondary-color);
+            padding: 40px;
+        }
+        button {
+            cursor: pointer;
+        }
+        .template-btn2 {
+            background: var(--main-color-one);
+            border: 1px solid transparent;
+            &:hover {
+                background: var(--secondary-color);
+            }
+        }
+    }
+
+    // Related Post
+    .blog-single-post {
+        margin-top: 70px;
+        .post-image {
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 415px;
+            height: 590px;
+            &:hover {
+                .hover-state {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .hover-state {
+                width: 100%;
+                height: 100%;
+                background: rgba(220, 163, 120, .4);
+                position: relative;
+                text-align: center;
+                transition: .5s;
+                opacity: 0;
+                visibility: hidden;
+                a {
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: 400;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+        .post-image-1 {
+            background-image: url('../img/single-blog/post-1.png');
+        }
+        .post-image-2 {
+            background-image: url('../img/single-blog/post-2.png');
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+.checkbox {
+  @apply inline-block text-sm;
+}
+.checkbox input[type='checkbox'] {
+  display: none;
+}
+.checkbox label {
+  line-height: 22px;
+  @apply inline-flex justify-center items-center cursor-pointer;
+}
+/*.checkbox input[type='checkbox']:checked + label {
+  @apply text-gray-400;
+}*/
+.checkbox input[type='checkbox'] + label span {
+  width: 22px;
+  height: 22px;
+  vertical-align: top;
+  @apply relative inline-block border rounded;
+}
+.checkbox input[type='checkbox'] + label span::before {
+  content: '';
+  display: block;
+}
+.checkbox input[type='checkbox']:checked + label span::before {
+  top: 5px;
+  left: 5px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  @apply absolute text-center bg-gray-700;
+}

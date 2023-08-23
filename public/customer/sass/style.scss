@@ -1,0 +1,74 @@
+/*
+Theme Name: Fashion
+Theme URI: 
+Author: 
+Author URI: 
+Description: 
+Version: 1.0
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+
+
+--------------------------------------------------------------*/
+
+
+//== Global Design
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_global";
+@import "global/_gutenberg";
+@import "global/_theme";
+
+//== Sections
+@import "sections/_breadcrumb";
+@import "sections/_comments";
+@import "sections/_error_404";
+@import "sections/_navbar";
+@import "sections/_info_bar"; 
+@import "sections/_header";
+@import "sections/_footer";
+@import "sections/_widgets";
+@import "sections/_banner";
+@import "sections/_collection";
+@import "sections/_categories";
+@import "sections/_discount";
+@import "sections/_video";
+@import "sections/_picks";
+@import "sections/_client";
+@import "sections/_services";
+@import "sections/_gallery";
+@import "sections/_newsletter";
+@import "sections/_instagram";
+
+//== Elements
+@import "elements/_accordion";
+@import "elements/_back_top";
+@import "elements/_preloader";
+@import "elements/_search_popup";
+@import "elements/_button";
+@import "elements/_floating-icon";
+@import "elements/_modal-content";
+
+// == Pages
+@import "pages/_about_page";
+@import "pages/_blog_single_page";
+@import "pages/_returns_page";
+@import "pages/_under_construction_page";
+@import "pages/_popup_page";
+@import "pages/_faq_page";
+@import "pages/_contact_us_page";
+@import "pages/_header_page";
+@import "pages/_form_page";
+@import "pages/_button_page";
+@import "pages/_cart_page";
+@import "pages/_cart_tab_page";
+@import "pages/_coming_soon_page";
+@import "pages/_blog_page";
+@import "pages/_shop_page";
+@import "pages/_profile_page";
+

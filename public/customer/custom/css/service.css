@@ -1,0 +1,118 @@
+.service-page .nav-absolute.navbar-area {
+  position: inherit;
+  padding: 0;
+}
+
+.service-page .service-banner {
+  background-image: url("/customer/img/service-page/services-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-color: rgb(0 0 0 / 77%);
+  background-blend-mode: overlay;
+  height: 224px;
+  display: flex;
+  align-items: center;
+}
+
+.service-page .service-item {
+  display: flex;
+  padding: 25px 25px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.service-page .service-item:hover {
+  box-shadow: 0px 0px 10px;
+  transform: scale(1.03);
+}
+
+.service-page .service-item .service-photo {
+  width: 35%;
+}
+
+.service-text {
+  position: relative;
+}
+
+.service-page .service-item .service-text {
+  padding: 5px 20px;
+  width: 65%;
+}
+
+.service-page .service-item .service-texth6 {
+  text-transform: capitalize;
+}
+
+.service-reviews, .service-review-form {
+  margin-top: 45px;
+}
+
+.service-reviews .user-photo {
+  width: 90px !important;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 7px;
+}
+
+.service-reviews .review-ratings {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.service-reviews .review-ratings .fa.fa-star {
+  color: #FFBB54;
+  margin-right: 3px;
+  font-size: 18px;
+}
+
+.service-reviews .review-ratings .fa.fa-star.diff-star {
+  color: #dddddd;
+}
+
+.service-reviews .review-content {
+  margin-top: 13px;
+}
+
+.service-reviews .review-customer {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.service-reviews .review-date {
+  font-size: 14px;
+}
+
+.service-review-form input,
+.service-review-form textarea {
+  padding: 7px 12px;
+  background: transparent;
+  border: 1px solid #D0CBC7;
+  width: 100%;
+}
+
+.service-review-form .fa.fa-star {
+  margin-right: 3px;
+  font-size: 18px;
+}
+
+.service-rating {
+  bottom: 5px;
+  position: absolute;
+}
+
+.service-rating > li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.service-rating i {
+  color: #FFBB54;
+  cursor: pointer;
+}
+
+.service-rating > .diff-color > i {
+  color: #dddddd!important;
+}

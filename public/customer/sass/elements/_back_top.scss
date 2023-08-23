@@ -1,0 +1,16 @@
+
+/*---------------------------------------
+    ## Back Top
+---------------------------------------*/
+.back-to-top {
+    position: fixed;
+    right: 50px;
+    bottom: 130px;
+    color: var(--heading-color);
+    text-align: center;
+    z-index: 99;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    font-weight: 600;
+}

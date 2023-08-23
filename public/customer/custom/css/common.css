@@ -1,0 +1,155 @@
+/* BEGIN NAVBAR STYLE */
+.nav-right-content .user-info .dropdown-toggle:after {
+    display: none;
+}
+
+.nav-right-content .user-info .dropdown-menu-right {
+    transform: translate(calc(-100% + 30px), 14px);
+}
+
+.nav-right-content .user-info .dropdown-menu-right .dropdown-item {
+    font-size: 16px!important;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-right-content .user-info .dropdown-menu-right .dropdown-item:hover {
+    background-color: transparent;
+}
+
+.nav-right-content .user-info .dropdown-menu-right {
+    border-radius: 0px;
+}
+/* END NAVBAR STYLE */
+
+.btn-address {
+    border: 1px solid black;
+    padding: 24px;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.btn-address.default {
+    border: 2px solid;
+}
+
+.btn-address:hover {
+    border: 2px solid;
+}
+
+.btn-address .btn-address-delete {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 26px;
+}
+
+.btn-address .text-address {
+    font-size: 13px;
+}
+
+.btn-address .btn-address-sm {
+    font-size: 13px;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+.default-address-mark {
+    font-size: 13px;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-primary {
+    color: #dca378!important;
+}
+
+.common-input2 select {
+    padding: 15px 20px;
+    background: transparent;
+    border: 1px solid #D0CBC7;
+}
+
+.common-form-bg {
+    background-color: #F9F1ED;
+    padding: 60px 40px;
+}
+
+.decoration-underline,
+.decoration-underline:hover {
+    text-decoration: underline;
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    vertical-align: text-bottom;
+    border: .15em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+    animation: spinner-border .75s linear infinite;
+}
+
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
+}
+
+.country-select {
+    width: 100%;
+}
+
+.select-language {
+    border: none;
+    padding: 5px;
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.select-language:focus {
+    border: none;
+}
+
+.ff-monospace {
+    font-family: monospace;
+}
+
+.iti.iti--allow-dropdown.iti--show-flags {
+    width: 100%;
+}
+
+.common-button {
+    padding: 7px 21px;
+    border: 1px solid;
+    background-color: white;
+    color: initial;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+    min-width: 100px!important;
+}
+.common-button:hover {
+    background-color: black;
+    color: white;
+}
+.common-button:focus {
+    outline: none;
+}
+@media only screen and (max-width: 575.98px) {
+    .navbar-area .nav-right-content {
+        top: 38px!important;
+    }
+}

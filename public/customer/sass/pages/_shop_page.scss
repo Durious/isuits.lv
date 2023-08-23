@@ -1,0 +1,255 @@
+/* Shop Page */
+.shop-page {
+  .instagram-area {
+    padding-top: 50px;
+  }
+
+  .nav-absolute.navbar-area {
+    position: inherit;
+    padding: 0;
+  }
+
+  .shop-title {
+    padding-left: 20%;
+  }
+
+  .shop-right {
+    padding-left: 50px;
+  }
+
+  .fashion-shop-slider {
+    .image-bg {
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 320px;
+      height: 450px;
+
+      &:hover {
+        .hover-state {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      .hover-state {
+        width: 100%;
+        height: 100%;
+        background: rgba(220, 163, 120, .4);
+        position: relative;
+        text-align: center;
+        transition: .5s;
+        opacity: 0;
+        visibility: hidden;
+
+        a {
+          color: $white;
+          font-size: 20px;
+          font-weight: 400;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        span {
+          color: $white;
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .slick-list {
+      padding: 0 10% 0 0;
+    }
+  }
+
+  .slider-progress {
+    margin-top: 70px;
+
+  }
+
+  .shop-content {
+    padding-top: 100px;
+    position: relative;
+
+    .shop-items-top {
+      margin-top: -55px;
+      margin-bottom: 30px;
+
+      span {
+        font-family: var(--heading-font);
+        font-weight: 400;
+      }
+
+      .dropdown {
+        padding-right: 20px;
+
+        .drop-btn {
+          border: none;
+          background: none;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .shop-sidebar {
+      .title {
+        margin: 50px 0 30px;
+
+        h4 {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin: 10px 0;
+          font-weight: 400;
+        }
+
+        a.active {
+          color: var(--main-color-one);
+        }
+      }
+
+      .categories {
+        li {
+          position: relative;
+
+          &:after {
+            content: '\f067';
+            font-family: 'fontAwesome';
+            display: inline-block;
+            padding: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid var(--paragraph-color);
+            font-size: 9px;
+            line-height: 10px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 50%;
+          }
+        }
+      }
+
+      .colors {
+        .circle {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 25px;
+        }
+
+        .black {
+          background: #000000;
+        }
+
+        .blue {
+          background: #B1C6D6;
+        }
+
+        .grey {
+          background: #BEBEBE;
+        }
+
+        .green {
+          background: #007B00;
+        }
+
+        .yellow {
+          background: #E5B000;
+        }
+
+        .red {
+          background: #E20000;
+        }
+      }
+    }
+  }
+
+
+  /* progress bar */
+  .controler-wrapper {
+    margin-top: 33px;
+    padding-left: 10px;
+
+    .active-controler {
+      bottom: -19px;
+      position: absolute;
+    }
+
+    .progressbar {
+      width: 40%;
+      height: 5px;
+      position: relative;
+      top: 38px;
+
+      .home-slider-progress {
+        background-color: #E2E2E2;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+      }
+
+      .home-slider-progress-active {
+        background-color: var(--main-color-one);
+        position: absolute;
+        width: 0;
+        height: 2px;
+        top: 0;
+      }
+
+      span.devider {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+    }
+
+    .total-controler {
+      position: absolute;
+      bottom: -19px;
+      left: 98px;
+    }
+  }
+}
+
+.shop-page .fashion-shop-slider .slick-prev {
+  display: none !important;
+}
+
+.shop-page .fashion-shop-slider .slick-arrow {
+  position: absolute;
+  bottom: -73px;
+  left: 44%;
+  cursor: pointer;
+  line-height: 0;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .shop-sidebar-right {
+    margin-left: 30px;
+  }
+}
+
+.coming-soon-page ul.countdown li span,
+.coming-soon-page ul.countdown li p {
+  color: #ddd;
+}

@@ -1,0 +1,119 @@
+/* Button Page */
+
+.button-page {
+    
+    // Navigation
+    .nav-absolute.navbar-area {
+        position: inherit;
+        padding: 0;
+        .nav-right-content {
+            li {
+                margin: 0 10px;
+            }
+        }
+        select {
+            border: none;
+            font-size: 16px;
+            color: var(--paragraph-color);
+            font-weight: 300;
+        }
+        .user-image {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    // Banner
+    .button-banner {
+        background-image: url('../img/button-page/banner-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 800px;
+            height: 200px;
+            background-color: $white;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .banner-title {
+            padding: 300px 0 50px;
+        }
+    }
+
+    // Button Section
+    .button-section {
+        padding-top: 150px;
+        .template-btn2 {
+            margin: 0 100px;
+        }
+    }
+}
+
+.template-btn2.on1 {
+    color: $white;
+    border: 1px solid var(--secondary-color);
+    background: var(--secondary-color);
+    &:hover {
+        color: $white;
+        border: 1px solid var(--main-color-one);
+        background: var(--main-color-one);
+    }
+}
+.template-btn2.on2 {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    background: $white;
+    &:hover {
+        color: $white;
+        border: 1px solid var(--main-color-one);
+        background: var(--main-color-one);
+        .custom-icon {
+            background: $white;
+            &:after {
+                background: $white;
+            }
+        }
+    }
+}
+
+.template-btn2.off1 {
+    color: $white;
+    border: 1px solid var(--main-color-one);
+    background: var(--main-color-one);
+    &:hover {
+        color: $white;
+        border: 1px solid var(--secondary-color);
+        background: var(--secondary-color);
+    }
+}
+.template-btn2.off2 {
+    color: $white;
+    border: 1px solid var(--secondary-color);
+    background: var(--secondary-color);
+    &:hover {
+        color: $white;
+        border: 1px solid var(--main-color-one);
+        background: var(--main-color-one);
+    }
+}
+
+.template-btn2.disable1 {
+    color: $white;
+    border: 1px solid #ACACAC;
+    background: #ACACAC;
+}
+.template-btn2.disable2 {
+    color: #ACACAC;
+    border: 1px solid #ACACAC;
+    background: $white;
+}

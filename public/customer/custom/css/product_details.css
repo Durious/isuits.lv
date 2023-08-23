@@ -1,0 +1,374 @@
+.custom-field-main-photo {
+    width: 100%;
+    position: sticky;
+    padding: 0px 20px;
+    object-fit: contain;
+    top: 0px;
+    max-height: 80vh;
+    text-align: center;
+    padding-top: 150px;
+}
+.customization-wizard {
+    height: 100%;
+    position: relative;
+}
+.customization-wizard .step-title-list {
+    display: flex;
+    padding-left: 20px;
+}
+.customization-wizard .step-title-list .step-action {
+    margin-right: 22px;
+    line-height: 30px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 0px 25px;
+}
+.customization-wizard .step-title-list .step-title {
+    text-transform: capitalize;
+    padding: 0px 15px;
+    color: #767676;
+    margin-right: 22px;
+    display: block;
+    position: relative;
+    text-align: center;
+    background: #ebebeb;
+    line-height: 30px;
+    height: fit-content;
+    transition: all .5s;
+}
+.customization-wizard .step-title::before, .step-title::after {
+    top: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    transition: all .5s;
+}
+.customization-wizard .step-title::before {
+    left: 100%;
+    border-left: 10px solid #ebebeb;
+    border-top: 15px solid transparent!important;
+    border-bottom: 15px solid transparent!important;
+}
+.customization-wizard .step-title::after {
+    right: 100%;
+    border-top: 15px solid #ebebeb;
+    border-bottom: 15px solid #ebebeb;
+    border-left: 10px solid transparent!important;
+}
+.customization-wizard .step-title.active {
+    background: #012939;
+    color: white;
+}
+.customization-wizard .step-title.active::before {
+    border-left: 10px solid #012939;
+}
+.customization-wizard .step-title.active::after {
+    border-top: 15px solid #012939;
+    border-bottom: 15px solid #012939;
+}
+.customization-wizard .step-item {
+    display: none;
+    margin-bottom: 70px;
+}
+.customization-wizard .step-item.active {
+    display: block;
+}
+.customization-wizard .step-item h4 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.customization-wizard .step-item .custom-field {
+    margin-top: 50px;
+}
+.customization-wizard .template-btn {
+    cursor: pointer;
+}
+.customization-wizard .template-btn:focus {
+    outline: none;
+}
+/* Radio Button */
+.customization-wizard .radio-button {
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    height: 54px;
+    position: relative;
+}
+
+.radio-button label,
+.customization-wizard .radio-button input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.customization-wizard .radio-button input[type="radio"] {
+    opacity: 0.011;
+    z-index: 7;
+    cursor: pointer;
+}
+
+.customization-wizard .radio-button input[type="radio"]:checked + label {
+    background: #012939;
+    color: white;
+}
+
+.customization-wizard .radio-button label {
+    cursor: pointer;
+    transition: all .5s;
+    border: 1px solid #012939;
+    color: #012939;
+    z-index: 5;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/* Image Radio */
+.customization-wizard .image-radio-button {
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 180px;
+    margin-bottom: 65px;
+}
+
+.image-radio-button label,
+.customization-wizard .image-radio-button input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.customization-wizard .image-radio-button input[type="radio"] {
+    opacity: 0.011;
+    z-index: 7;
+    cursor: pointer;
+}
+
+.customization-wizard .image-radio-button label {
+    cursor: pointer;
+    z-index: 5;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+
+.customization-wizard .image-radio-button label span:not(.check-mark) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, calc(100% + 10px));
+    width: 100%;
+}
+
+.customization-wizard .image-radio-button label img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid #d7d7d7;
+    transition: all .5s;
+}
+
+.customization-wizard .image-radio-button label .check-mark {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 36px;
+    height: 36px;
+    font-size: 21px;
+    border-radius: 50%;
+    border: 2px solid #012939;
+    background: white;
+    color: #012939;
+    opacity: 0;
+    transition: all .3s;
+    transform: translate(-50%, -50%);
+}
+
+.customization-wizard .image-radio-button input[type="radio"]:checked + label img {
+    border: 2px solid #012939;
+}
+
+.customization-wizard .image-radio-button input[type="radio"]:checked + label .check-mark {
+    opacity: 1;
+}
+/* Text Input */
+.customization-wizard .custom-field-input {
+    border: 1px solid #767676;
+    color: #012939;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+}
+.customization-wizard .custom-field-input:focus {
+    border: 1px solid #012939!important;
+}
+/* TextArea Input */
+.customization-wizard .custom-field-textarea {
+    border: 1px solid #767676;
+    color: #012939;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+}
+.customization-wizard .custom-field-textarea:focus {
+    border: 1px solid #012939!important;
+}
+.customized-alert {
+    padding: 15px 20px;
+    color: #111112;
+    border: 1px solid #111112;
+    font-size: 18px;
+    font-weight: 400;
+}
+.customized-alert button{
+    background: transparent;
+    color: #111112;
+    border-radius: 0px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+.customfield-preview-container {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    height: 100%;
+}
+.custom-field-main-photo img {
+    height: 100%;
+    min-height: 270px;
+    max-height: calc(80vh - 150px);
+}
+.customfield_preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.product-reviews {
+    margin-top: 45px;
+}
+.product-comments {
+    margin-top: 45px;
+}
+.product-reviews .user-photo {
+    width: 90px!important;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 7px;
+}
+.product-reviews .review-ratings {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-reviews .review-ratings .fa.fa-star {
+    color: #FFBB54;
+    margin-right: 3px;
+    font-size: 18px;
+}
+.product-reviews .review-ratings .fa.fa-star.diff-star {
+    color: #dddddd;
+}
+.product-reviews .review-content {
+    margin-top: 13px;
+}
+.product-reviews .review-customer {
+    font-size: 14px;
+    font-style: italic;
+}
+.product-reviews .review-date {
+    font-size: 14px;
+}
+.product-comment-form {
+    padding: 1em;
+}
+.product-review-form input,
+.product-review-form textarea {
+    padding: 7px 12px;
+    background: transparent;
+    border: 1px solid #D0CBC7;
+    width: 100%;
+}
+
+.product-comment-form textarea {
+    padding: 7px 12px;
+    background: transparent;
+    border: 1px solid #D0CBC7;
+    width: 100%;
+    height: 10em;
+}
+
+.product-review-form .fa.fa-star {
+    margin-right: 3px;
+    font-size: 18px;
+}
+.product-comments .comment-content {
+    margin-top: 13px;
+}
+.tab-accordion {
+    display: flex;
+}
+div.tab ul li {
+    float: left;
+    background-color: transparent;
+    
+}
+div.tab ul li.active {
+    background-color: #dca378;
+}
+.detail-tab {
+    width: 168px;
+}
+div.tab-content {
+    min-height: 400px;
+}
+.tab-one-content,
+.tab-second-content,
+.tab-third-content {
+    padding-right: 100px;
+}
+.comment-content {
+    min-height: 60px;
+}
+.product-comments .owl-nav .owl-prev {
+    bottom: 10px;
+    left: 10%;
+}
+.product-comments .owl-nav .owl-next {
+    bottom: 10px;
+    left: 80%;
+}
+@media (max-width: 992px) {
+    .custom-field-main-photo {
+        padding-top: 0px;
+    }
+    .custom-field-main-photo {
+        height: 400px;
+        object-fit: contain;
+    }
+    .cart-page  .cart-page-banner-bg img{
+        object-fit: contain;
+    }
+}

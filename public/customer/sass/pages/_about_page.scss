@@ -1,0 +1,227 @@
+/* About Page */
+.about-page {
+    .instagram-area {
+        padding-top: 110px;
+    }
+    // Navigation
+    .nav-absolute.navbar-area {
+        position: inherit;
+        padding: 0;
+    }
+
+    // Story
+    .about-story {
+        .story-image {
+            .image-bg {
+                background-image: url('../img/about-page/story/story.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 471px;
+                height: 682px;
+                margin-top: -150px;
+                float: right;
+            }
+        }
+    }
+
+    // Service
+    .about-service {
+        .service-icon {
+            margin-right: 40px;
+        }
+        a {
+            margin-top: 40px;
+            position: relative;
+            font-size: 18px;
+            text-transform: capitalize;
+            span {
+                font-size: 30px;
+                position: absolute;
+                top: 3px;
+                right: 15px;
+                transition: $transition;
+            }
+            &:hover {
+                span {
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    // Team
+    .about-team {
+        h4 {
+            line-height: 28px;
+        }
+        h6 {
+            color: #888888;
+            font-style: italic;
+        }
+        .slider-image {
+            width: 95%;
+            .image-bg {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 850px;
+            }
+            .image-1 {
+                background-image: url('../img/about-page/team/slider-1.png');
+            }
+            .image-2 {
+                background-image: url('../img/about-page/team/nav-2.png');
+            }
+            .image-3 {
+                background-image: url('../img/about-page/team/nav-3.png');
+            }
+            .image-4 {
+                background-image: url('../img/about-page/team/nav-4.png');
+            }
+        }
+        
+        .team-nav {
+            margin-top: -260px;
+        }
+        .nav-image {
+            cursor: pointer;
+            .image-bg {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 90%;
+                height: 260px;
+            }
+            .image-1 {
+                background-image: url('../img/about-page/team/nav-1.png');
+            }
+            .image-2 {
+                background-image: url('../img/about-page/team/nav-2.png');
+            }
+            .image-3 {
+                background-image: url('../img/about-page/team/nav-3.png');
+            }
+            .image-4 {
+                background-image: url('../img/about-page/team/nav-4.png');
+            }
+        }
+    }
+
+    // Ratings
+    .about-ratings {
+        padding-bottom: 60px;
+        .single-item {
+            padding: 0 50px;
+            margin-bottom: 50px;
+        }
+        .ratings-right {
+            padding-top: 50px;
+        }
+        .item-1, .item-3 {
+            margin-top: -50px;
+        }
+        a {
+            margin-top: 40px;
+            position: relative;
+            font-size: 18px;
+            text-transform: capitalize;
+            span {
+                font-size: 30px;
+                position: absolute;
+                top: 3px;
+                right: 15px;
+                transition: $transition;
+            }
+            &:hover {
+                span {
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    // News Section 
+    .news-section {
+        .news-left {
+            padding-right: 30%; 
+            p {
+                margin: 50px 0;
+            }
+        }
+        .news-image {
+            .image-bg {
+                background-image: url('../img/about-page/news/news.png');
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
+                width: 100%;
+                height: 590px;
+            }
+        }
+        .news-right {
+            padding-left: 30%;
+            span {
+                margin-top: 30px;
+                display: block;
+            }
+        }
+    }
+
+}
+
+.rating-circle {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background: #f7f7f7;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    .circle-wave {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: var(--main-color-one);
+        border-radius: 50%;
+        overflow: hidden;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-75%);
+        }
+        &:before {
+            border-radius: 45%;
+            background: rgba(244,244,244,1);
+            animation: naeem 5s linear infinite;
+        }
+        &:after {
+            border-radius: 40%;
+            background: rgba(244,244,244,.5);
+            animation: naeem 10s linear infinite;
+        }
+        @keyframes naeem {
+            0% {
+                transform: translate(-50%,-75%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%,-75%) rotate(360deg);
+            }
+        }
+    }
+
+    span {
+        color: $white;
+        font-size: 20px;
+        position: absolute;
+        bottom: 25px; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

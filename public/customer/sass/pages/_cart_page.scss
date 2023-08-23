@@ -1,0 +1,226 @@
+/* Cart Page */
+
+.cart-page {
+    .instagram-area {
+        padding-top: 50px;
+    }
+    .cart-page-banner-bg {
+        width: 100%;
+        height: 100vh;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .cart-banner-left {
+        margin-bottom: 40px;
+    }
+    .left-title {
+        h4 {
+            color: #ACACAC;
+        }
+    }
+
+    .color {
+        li {
+            display: inline;
+            margin-right: 30px;
+            span {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                display: inline-block;
+                cursor: pointer;
+            }
+            .color1 {
+                background: #FFD0CE;
+            }
+            .color2 {
+                background: #111112;
+            }
+            .color3 {
+                background: #E1716B;
+            }
+            .color4 {
+                background: #FDAE43;
+            }
+        }
+        .active {
+            span {
+                box-shadow: 0 0 0 10px #ECECEC;
+            }
+        }
+    }
+
+    .size {
+        ul {
+            padding: 0;
+        }
+        li {
+            display: inline;
+            margin-right: 40px;
+            span {
+                font-weight: 400;
+                cursor: pointer;
+                &.active {
+                    color: var(--main-color-one);
+                }
+            }
+        }
+    }
+
+    .quantity {
+        ul {
+            padding: 0;
+        }
+        li {
+            display: inline;
+            margin-right: 40px;
+            span {
+                font-weight: 400;
+            }
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .image {
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        width: 85px;
+        height: 85px;
+        &:hover {
+            .hover-state {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .hover-state {
+            width: 100%;
+            height: 100%;
+            background: rgba(220, 163, 120, .8);
+            position: relative;
+            text-align: center;
+            transition: .5s;
+            opacity: 0;
+            visibility: hidden;
+            a {
+                font-size: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    .image-1 {
+        background-image: url('../img/cart-page/banner-bg.png');
+    }
+    .image-2 {
+        background-image: url('../img/cart-page/banner-bg2.png');
+    }
+    .image-3 {
+        background-image: url('../img/cart-page/banner-bg3.png');
+    }
+
+    .banner-right {
+        margin-top: 20%;
+        .template-btn2 {
+            width: 350px;
+        }
+    }
+
+    .tab-accordion {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 12px;
+                text-align: center;
+                margin: 0;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .tab-content {
+        ul {
+            width: 190px;
+            li {
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    left: -30px;
+                    width: 7px;
+                    height: 7px;
+                    background: var(--main-color-one);
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .banner-right {
+        padding-left: 60px;
+    }
+
+    table {
+        background: var(--main-color-one);
+    }
+    td, th {
+        border: 1px solid $white;
+        text-align: center;
+        color: $white;
+        font-family: var(--noto-serif);
+        font-weight: 400;
+    }
+    th {
+        padding: 20px;
+    }
+    td {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .tab-one-content {
+        padding-right: 100px;
+        i {
+            margin: 0 5px;
+        }
+        .diff-star {
+            color: #ADABAB;
+        }
+        .time, .by {
+            font-size: 14px;
+        }
+        .paragraph {
+            width: 60%;
+        }
+    }
+
+    //form-wizard
+    .customization-wizard {
+        .step-item{
+            h5 {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    // Related
+}
+
+
+.related-slider .owl-nav .owl-next {
+    position: absolute;
+    top: 40%;
+    right: -100px;
+}
+.related-slider .owl-prev {
+    display: none;
+}

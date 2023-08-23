@@ -1,0 +1,75 @@
+
+/*---------------------
+    ## Breadcumb 
+----------------------*/
+.breadcrumb-area {
+    padding: 140px 0 142px 0;
+    background-image: url(../img/bg/breadcrumb-bg.jpg);
+    position: relative;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    &:before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: rgba(#000,.7);
+        z-index: -1;
+    }
+    &.extra{
+        padding-bottom: 138px;
+    }
+    .page-title {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 700;
+        color: $white;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 600px;
+        color: rgba($white, .70);
+        margin-bottom:  20px;
+    }
+    .page-list {
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            position: relative;
+            padding-left: 30px;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba($white, .70);
+            &:first-child {
+                padding-left: 0;
+                a{
+                    color: var(--main-color-one);
+                }
+                &:after {
+                    display: none;
+                }
+            }
+            &:after {
+                position: absolute;
+                left: 10px;
+                top: 0;
+                content: "\f105";
+                font-family:'fontawesome';
+            }
+            a {
+                color: rgba($white, .70);
+                @include transition($transition);
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
