@@ -35,7 +35,8 @@ class AjaxController extends Controller
             return back()->with('error', __('Language is not available yet.'));
         }
         App::setLocale($locale);
-        session(['language' => $locale]);
+        // session(['language' => $locale]);
+        session(['admin_language' => $locale]);
         return back()->with('message', __('Language has been changed.'));
     }
 

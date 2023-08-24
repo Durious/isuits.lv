@@ -369,7 +369,7 @@
             </div>
           </div>
         </div>
-        <div class="my-5 font-bold text-gray-500">About US</div>
+        <div class="my-5 font-bold text-gray-500">{{$t('about_us')}}</div>
         <div class="w-full">
           <div
             class="ltr:mr-6 rtl:ml-6 mb-3 bg-white font-bold text-lg border rounded-md p-3 cursor-pointer flex justify-between items-center hover:border-gray-400"
@@ -427,7 +427,7 @@
             </div>
           </div>
         </div>
-        <div class="my-5 font-bold text-gray-500">Footer</div>
+        <div class="my-5 font-bold text-gray-500">{{$t('Footer')}}</div>
         <div class="w-full">
           <div
             class="ltr:mr-6 rtl:ml-6 mb-3 bg-white font-bold text-lg border rounded-md p-3 cursor-pointer flex justify-between items-center hover:border-gray-400"
@@ -447,7 +447,7 @@
               :errors="errors['footer.twitter']" />
           </div>
         </div>
-        <div class="my-5 font-bold text-gray-500">Terms & Condition</div>
+        <div class="my-5 font-bold text-gray-500">{{$tc('terms_condition')}}</div>
         <div class="w-full ltr:mr-6 rtl:ml-6">
           <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
         </div>

@@ -74,8 +74,8 @@ class HomeController extends Controller
             return back()->with('error', __('Language is not available yet.'));
         }
         App::setLocale($request->lang);
-        session(['language' => $request->lang]);
-        // session(['user_language' => $request->lang]);
+        // session(['language' => $request->lang]);
+        session(['user_language' => $request->lang]);
         return back()->with('message', __('Language has been changed.'));
     }
 }

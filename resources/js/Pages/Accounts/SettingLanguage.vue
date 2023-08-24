@@ -10,12 +10,12 @@
   </div>
   <div class="bg-white rounded shadow overflow-hidden max-w-3xl content-panel">
     <div class="editor-title">
-      <p>SET LANGUAGE KEYS & VALUES</p>
+      <p>{{$t('set_language_keys_values')}}</p>
     </div>
     <div class="editor-header">
       <form class="lang-item">
-        <div class="lang-index header">Main Languages</div>
-        <div class="lang-value header">Translated Languages</div>
+        <div class="lang-index header">{{$t('main_languages')}}</div>
+        <div class="lang-value header">{{$t('translated_languages')}}</div>
       </form>
     </div>
     <div id="json-list">
@@ -204,8 +204,6 @@ export default {
       });
     },
     submitSaveLang(e) {
-      console.log(this.current_index, this.current_value);
-      console.log(this.form)
       if (this.current_lang == "en") {
         enJson[this.current_index] = this.current_value;
       } else if (this.current_lang == "lv") {
@@ -223,13 +221,11 @@ export default {
     },
     onSelectAction(e) {
       var prop_string = e.target.value;
-      console.log(prop_string);
-      this.current_lang = prop_string;
+      this.current_lang = prop_string.toLowerCase();
       this.selectLang(this.current_lang);
     },
     onChangeNewIndex(e) {
       var new_index = "val";
-      console.log(new_index);
     },
     onChangeNewValue(e) {
       console.log(e.target.name);
